@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>SLA__Exceeded_SLA__c</fullName>
+    <fullName>SLA_Exceeded_SLA__c</fullName>
     <deprecated>false</deprecated>
     <externalId>false</externalId>
     <formula>AND(
