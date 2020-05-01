@@ -1,0 +1,26 @@
+.myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+  
+.myBar {
+  height: 80px;
+  background-color: #4CAF50;
+  text-align: center;
+  line-height: 80px;
+  color: white;
+  width: 10%;
+  white-space: nowrap;
+  font-size: 1rem;
+  color: black;
+}
+.danger{
+  background-color: #bb2124;
+}
+.warning{
+  background-color: #f0ad4e;
+}
+.text{
+  text-align: center;
+    font-size: 1.3rem;
+}

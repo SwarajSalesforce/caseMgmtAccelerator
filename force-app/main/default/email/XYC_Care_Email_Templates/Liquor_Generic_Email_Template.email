@@ -1,0 +1,19 @@
+Dear {!Contact.Name},
+
+
+Thank for your inquiry that we received via {!Case.Origin} on the {!Case.CreatedDate}.
+
+The following case number: {!Case.CaseNumber} has been created for your inquiry. 
+
+Your case has been recorded with having a case type of: {!Case.Type} and a secondary case type of: {!Case.Case_Sub_Type__c}
+
+Your case has a priority of: {!Case.Priority}. 
+
+Your case has an SLA due date of: {!Case.SLA_Due_Date__c}.
+
+If you have any further questions in relation to your case please contact {!Case.OwnerFullName} via email on {!Case.OwnerEmail}.
+
+
+Regards,
+
+Liquor Customer Service

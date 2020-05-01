@@ -1,0 +1,13 @@
+Dear {!Contact.Name},
+
+
+Thank you for your inquiry. This e-mail is an automatically generated response to confirm that we have received your query.
+
+Your case number is {!Case.CaseNumber}.
+
+Please quote this number during any further correspondence with our team.
+
+
+Regards,
+
+Wholesale Customer Service

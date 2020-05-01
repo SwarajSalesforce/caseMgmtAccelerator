@@ -1,0 +1,11 @@
+Dear {!Contact.Name},
+
+
+We received a duplicate inquiry from you, and this inquiry has been closed.
+
+Please refer to reference number {!Case.Parent} if you have any further questions regarding the initial inquiry.
+
+
+Regards,
+
+Wholesale Customer Service

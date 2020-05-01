@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>classic_XYZ_care_footer</letterhead>
+    <name>Liquor Generic Email Template HTML</name>
+    <style>freeForm</style>
+    <subject>Case number: {!Case.CaseNumber}; {!Case.Subject}</subject>
+    <textOnly>Dear {!Contact.Name},
+
+
+Thank for your inquiry that we received via {!Case.Origin} on the {!Case.CreatedDate}.
+
+The following case number: {!Case.CaseNumber} has been created for your inquiry.
+
+Your case has been recorded with having a case type of: {!Case.Type} and a secondary case type of: {!Case.Case_Sub_Type__c}
+
+Your case has a priority of: {!Case.Priority}.
+
+Your case has an SLA due date of: {!Case.SLA_Due_Date__c}.
+
+If you have any further questions in relation to your case please contact {!Case.OwnerFullName} via email on {!Case.OwnerEmail}.
+
+
+Regards,
+
+Liquor Customer Service</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

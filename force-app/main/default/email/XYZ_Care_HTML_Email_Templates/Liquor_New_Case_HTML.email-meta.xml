@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>classic_XYZ_care_footer</letterhead>
+    <name>Liquor New Case HTML</name>
+    <style>freeForm</style>
+    <subject>Case number: {!Case.CaseNumber}; {!Case.Subject}</subject>
+    <textOnly>Dear {!Contact.Name},
+
+
+Thank you for your inquiry. This e-mail is an automatically generated response to confirm that we have received your query.
+
+Your case number is {!Case.CaseNumber}.
+
+Please quote this number during any further correspondence with our team.
+
+
+Regards,
+
+Liquor Customer Service</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

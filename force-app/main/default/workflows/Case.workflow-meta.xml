@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Escalated_Case_Liquor</fullName>
+        <description>Escalated Case Liquor</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>casemgmtacc@capgemini.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>nipuni.peiris@capgemini.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/SupportEscalatedCaseNotification</template>
+    </alerts>
+    <alerts>
+        <fullName>Escalated_Case_Retail</fullName>
+        <description>Escalated Case Retail</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>nipuni.peiris@capgemini.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/SupportEscalatedCaseNotification</template>
+    </alerts>
+    <alerts>
+        <fullName>Escalated_Case_Wholesale</fullName>
+        <description>Escalated Case Wholesale</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>nipuni.peiris@capgemini.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/SupportEscalatedCaseNotification</template>
+    </alerts>
+    <alerts>
+        <fullName>Liquor_Closed_Case_Alert</fullName>
+        <description>Liquor Closed Case Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>XYC_Care_Email_Templates/Liquor_Closed_Case</template>
+    </alerts>
+    <alerts>
+        <fullName>Liquor_Closed_Case_to_Contact_Alert</fullName>
+        <description>Liquor Closed Case to Contact Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>XYC_Care_Email_Templates/Liquor_Email_Received_to_Closed_Case_To_Contact</template>
+    </alerts>
+    <alerts>
+        <fullName>Liquor_Closed_as_Duplicate_Alert</fullName>
+        <description>Liquor Closed as Duplicate Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>XYC_Care_Email_Templates/Liquor_Closed_as_Duplicate</template>
+    </alerts>
+    <alerts>
+        <fullName>Liquor_Generic_Email_Alert</fullName>
+        <description>Liquor Generic Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>XYC_Care_Email_Templates/Liquor_Generic_Email_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Liquor_New_Case_Alert</fullName>
+        <description>Liquor New Case Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>XYC_Care_Email_Templates/Liquor_New_Case</template>
+    </alerts>
+    <alerts>
+        <fullName>Retail_Closed_Case_Alert</fullName>
+        <description>Retail Closed Case Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>XYC_Care_Email_Templates/Retail_Closed_Case</template>
+    </alerts>
+    <alerts>
+        <fullName>Retail_Closed_Case_to_Contact_Alert</fullName>
+        <description>Retail Closed Case to Contact Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>XYC_Care_Email_Templates/Retail_Email_Received_to_Closed_Case_To_Contact</template>
+    </alerts>
+    <alerts>
+        <fullName>Retail_Closed_as_Duplicate_Alert</fullName>
+        <description>Retail Closed as Duplicate Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>XYC_Care_Email_Templates/Retail_Closed_as_Duplicate</template>
+    </alerts>
+    <alerts>
+        <fullName>Retail_Generic_Email_Alert</fullName>
+        <description>Retail Generic Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>XYC_Care_Email_Templates/Retail_Generic_Email_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Retail_New_Case_Alert</fullName>
+        <description>Retail New Case Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>XYC_Care_Email_Templates/Retail_New_Case</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Email_to_Liquor</fullName>
+        <ccEmails>swaraj1933@gmail.com</ccEmails>
+        <description>Send Email to Liquor</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>casemgmtacc@capgemini.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>XYZ_Care_HTML_Email_Templates/Liquor_New_Case_HTML</template>
+    </alerts>
+    <alerts>
+        <fullName>Wholesale_Closed_Case_Alert</fullName>
+        <description>Wholesale Closed Case Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>XYC_Care_Email_Templates/Wholesale_Closed_Case</template>
+    </alerts>
+    <alerts>
+        <fullName>Wholesale_Closed_Case_to_Contact_Alert</fullName>
+        <description>Wholesale Closed Case to Contact Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>XYC_Care_Email_Templates/Wholesale_Email_Received_to_Closed_Case_To_Contact</template>
+    </alerts>
+    <alerts>
+        <fullName>Wholesale_Closed_as_Duplicate_Alert</fullName>
+        <description>Wholesale Closed as Duplicate Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>XYC_Care_Email_Templates/Wholesale_Closed_as_Duplicate</template>
+    </alerts>
+    <alerts>
+        <fullName>Wholesale_Generic_Email_Alert</fullName>
+        <description>Wholesale Generic Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>XYC_Care_Email_Templates/Wholesale_Generic_Email_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Wholesale_New_Case_Alert</fullName>
+        <description>Wholesale New Case Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>XYC_Care_Email_Templates/Wholesale_New_Case</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Update_case_SLA_violation</fullName>
+        <description>update case SLA violation field</description>
+        <field>SLAViolation__c</field>
+        <literalValue>Yes</literalValue>
+        <name>Update case SLA violation</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>update_SLA_violation_field</fullName>
+        <description>update SLA violation field</description>
+        <field>SLAViolation__c</field>
+        <literalValue>Yes</literalValue>
+        <name>update SLA violation field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>update_case_SLA_violation_field</fullName>
+        <description>update case SLA violation</description>
+        <field>SLAViolation__c</field>
+        <literalValue>Yes</literalValue>
+        <name>update case SLA violation field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+</Workflow>

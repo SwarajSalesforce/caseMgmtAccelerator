@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EntitlementProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <SObjectType>Case</SObjectType>
+    <active>false</active>
+    <businessHours>Australia</businessHours>
+    <description>SLA for Wholesale</description>
+    <entryStartDateField>Case.CreatedDate</entryStartDateField>
+    <exitCriteriaFilterItems>
+        <field>Case.IsClosed</field>
+        <operation>equals</operation>
+        <value>true</value>
+    </exitCriteriaFilterItems>
+    <isVersionDefault>false</isVersionDefault>
+    <milestones>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Liner_brand__c</field>
+            <operation>equals</operation>
+            <value>Liquor</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Account.Care_Level__c</field>
+            <operation>equals</operation>
+            <value>Gold, Silver, Bronze</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>ResolutionTimeLiquor</milestoneName>
+        <minutesToComplete>720</minutesToComplete>
+        <timeTriggers>
+            <actions>
+                <name>Update_case_SLA_violation</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <timeLength>0</timeLength>
+            <workflowTimeTriggerUnit>Minutes</workflowTimeTriggerUnit>
+        </timeTriggers>
+        <useCriteriaStartTime>false</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <milestoneCriteriaFilterItems>
+            <field>Account.Care_Level__c</field>
+            <operation>equals</operation>
+            <value>Gold, Silver, Bronze</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Liner_brand__c</field>
+            <operation>equals</operation>
+            <value>Retail</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>ResolutionTimeRetail</milestoneName>
+        <minutesToComplete>720</minutesToComplete>
+        <timeTriggers>
+            <actions>
+                <name>update_case_SLA_violation_field</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <timeLength>0</timeLength>
+            <workflowTimeTriggerUnit>Minutes</workflowTimeTriggerUnit>
+        </timeTriggers>
+        <useCriteriaStartTime>false</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <businessHours>Australia</businessHours>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Liner_brand__c</field>
+            <operation>equals</operation>
+            <value>Wholesale</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Account.Care_Level__c</field>
+            <operation>equals</operation>
+            <value>Gold, Silver, Bronze</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>ResolutionTimeWholesale</milestoneName>
+        <minutesToComplete>900</minutesToComplete>
+        <timeTriggers>
+            <actions>
+                <name>update_SLA_violation_field</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <timeLength>0</timeLength>
+            <workflowTimeTriggerUnit>Minutes</workflowTimeTriggerUnit>
+        </timeTriggers>
+        <useCriteriaStartTime>false</useCriteriaStartTime>
+    </milestones>
+    <name>Wholesale Support</name>
+    <versionMaster>5522w000000CqaH</versionMaster>
+    <versionNumber>2</versionNumber>
+</EntitlementProcess>

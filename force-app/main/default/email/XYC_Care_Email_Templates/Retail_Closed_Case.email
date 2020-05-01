@@ -1,0 +1,11 @@
+Dear {!Contact.Name},
+
+
+Your request case number: {!Case.CaseNumber} has been closed.
+
+If you have any further questions please contact {!Case.OwnerEmail}.
+
+
+Regards,
+
+Retail Customer Service
