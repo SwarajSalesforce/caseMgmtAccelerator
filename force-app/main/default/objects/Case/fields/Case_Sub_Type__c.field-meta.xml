@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Sub_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Case Sub-Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Case_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Arrival Notice</fullName>
+                <default>false</default>
+                <label>Arrival Notice</label>
+            </value>
+            <value>
+                <fullName>Bill</fullName>
+                <default>false</default>
+                <label>Bill</label>
+            </value>
+            <value>
+                <fullName>Booking Amendment</fullName>
+                <default>false</default>
+                <label>Booking Amendment</label>
+            </value>
+            <value>
+                <fullName>Booking Cancellation</fullName>
+                <default>false</default>
+                <label>Booking Cancellation</label>
+            </value>
+            <value>
+                <fullName>Booking Request</fullName>
+                <default>false</default>
+                <label>Booking Request</label>
+            </value>
+            <value>
+                <fullName>Customs Manifest</fullName>
+                <default>false</default>
+                <label>Customs Manifest</label>
+            </value>
+            <value>
+                <fullName>Invoice Amendment/Dispute</fullName>
+                <default>false</default>
+                <label>Invoice Amendment/Dispute</label>
+            </value>
+            <value>
+                <fullName>Invoice Request/Query</fullName>
+                <default>false</default>
+                <label>Invoice Request/Query</label>
+            </value>
+            <value>
+                <fullName>Pre-Booking Enquiry</fullName>
+                <default>false</default>
+                <label>Pre-Booking Enquiry</label>
+            </value>
+            <value>
+                <fullName>Shipping Instruction</fullName>
+                <default>false</default>
+                <label>Shipping Instruction</label>
+            </value>
+            <value>
+                <fullName>Spam</fullName>
+                <default>false</default>
+                <label>Spam</label>
+            </value>
+            <value>
+                <fullName>Supplementary Booking Info</fullName>
+                <default>false</default>
+                <label>Supplementary Booking Info</label>
+            </value>
+            <value>
+                <fullName>Verify Copy</fullName>
+                <default>false</default>
+                <label>Verify Copy</label>
+            </value>
+            <value>
+                <fullName>Waiver Request</fullName>
+                <default>false</default>
+                <label>Waiver Request</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Booking</controllingFieldValue>
+            <valueName>Booking Amendment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Booking</controllingFieldValue>
+            <valueName>Booking Cancellation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Booking</controllingFieldValue>
+            <valueName>Booking Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Booking</controllingFieldValue>
+            <valueName>Pre-Booking Enquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Booking</controllingFieldValue>
+            <valueName>Supplementary Booking Info</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Documentation</controllingFieldValue>
+            <valueName>Arrival Notice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Documentation</controllingFieldValue>
+            <valueName>Bill</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Documentation</controllingFieldValue>
+            <valueName>Customs Manifest</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Documentation</controllingFieldValue>
+            <valueName>Shipping Instruction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Documentation</controllingFieldValue>
+            <valueName>Verify Copy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Invoicing</controllingFieldValue>
+            <valueName>Invoice Amendment/Dispute</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Invoicing</controllingFieldValue>
+            <valueName>Invoice Request/Query</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Invoicing</controllingFieldValue>
+            <valueName>Waiver Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Spam</controllingFieldValue>
+            <valueName>Spam</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>
