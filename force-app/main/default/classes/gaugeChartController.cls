@@ -1,4 +1,7 @@
 public with sharing class gaugeChartController {
+    getCaseData(){
+        return case;
+    }
     public gaugeChartController() {
         
     }

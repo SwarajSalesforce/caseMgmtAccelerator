@@ -1,0 +1,6 @@
+<apex:page controller="gaugeChartController"> 
+    <apex:chart name="MyChart" height="300" width="450" animate="true" data="{!CaseData}" >
+        <apex:axis type="Gauge" position="gauge" title="Enquiries" minimum="0" maximum="5" steps="2"/>
+        <apex:gaugeSeries dataField="size" donut="50" colorSet="#78c953,#ddd"/>
+    </apex:chart>
+</apex:page>
