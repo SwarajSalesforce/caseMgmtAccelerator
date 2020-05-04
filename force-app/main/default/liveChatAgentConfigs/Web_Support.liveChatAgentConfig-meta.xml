@@ -5,7 +5,7 @@
             <profile>admin</profile>
         </profiles>
         <users>
-            <user>casemgmtacc@capgemini.com</user>
+            <user>test-puu6uplna59k@example.com	</user>
         </users>
     </assignments>
     <autoGreeting>Welcome to salesforce chat</autoGreeting>
