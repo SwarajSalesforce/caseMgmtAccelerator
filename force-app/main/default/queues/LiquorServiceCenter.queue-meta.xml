@@ -3,9 +3,11 @@
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <name>LiquorServiceCenter</name>
     <queueMembers>
+    <!--
         <users>
             <user>casemgmtacc@capgemini.com</user>
         </users>
+        -->
     </queueMembers>
     <queueSobject>
         <sobjectType>Case</sobjectType>

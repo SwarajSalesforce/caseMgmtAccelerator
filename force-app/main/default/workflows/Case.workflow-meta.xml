@@ -4,14 +4,18 @@
         <fullName>Escalated_Case_Liquor</fullName>
         <description>Escalated Case Liquor</description>
         <protected>false</protected>
+        <!--
         <recipients>
             <recipient>casemgmtacc@capgemini.com</recipient>
             <type>user</type>
         </recipients>
+        -->
+
         <recipients>
-            <recipient>nipuni.peiris@capgemini.com</recipient>
+            <recipient>swaraj.behera@capgemini.com</recipient>
             <type>user</type>
         </recipients>
+        
         <senderType>CurrentUser</senderType>
         <template>unfiled$public/SupportEscalatedCaseNotification</template>
     </alerts>
