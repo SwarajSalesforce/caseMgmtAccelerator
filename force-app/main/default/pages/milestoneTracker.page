@@ -1,3 +1,3 @@
-<apex:page standardController="Case" showHeader="true">
+<apex:page standardController="Case" showHeader="false">
     <apex:milestoneTracker entityId="{!case.id}"/>
 </apex:page>
