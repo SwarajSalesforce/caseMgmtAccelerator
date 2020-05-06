@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>caseProgressStatus</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Case_Type__c</fieldNames>
+        <fieldNames>Closed_Case_Reason__c</fieldNames>
+        <picklistValueName>Closed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>ContactEmail</fieldNames>
+        <fieldNames>ContactId</fieldNames>
+        <fieldNames>EntitlementId</fieldNames>
+        <picklistValueName>Escalated</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>AccountId</fieldNames>
+        <fieldNames>Origin</fieldNames>
+        <fieldNames>OwnerId</fieldNames>
+        <fieldNames>SourceId</fieldNames>
+        <picklistValueName>New</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>CaseNumber</fieldNames>
+        <fieldNames>AccountId</fieldNames>
+        <fieldNames>ContactEmail</fieldNames>
+        <fieldNames>ContactMobile</fieldNames>
+        <picklistValueName>Working</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

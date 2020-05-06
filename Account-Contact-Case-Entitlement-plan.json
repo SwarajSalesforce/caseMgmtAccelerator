@@ -1,0 +1,35 @@
+[
+    {
+        "sobject": "Account",
+        "saveRefs": true,
+        "resolveRefs": true,
+        "files": [
+            "Accounts.json"
+        ]
+    },
+    {
+        "sobject": "Contact",
+        "saveRefs": true,
+        "resolveRefs": true,
+        "files": [
+            "Contacts.json"
+        ]
+    },
+    {
+        "sobject": "Entitlement",
+        "saveRefs": true,
+        "resolveRefs": true,
+        "files": [
+            "Entitlements.json"
+        ]
+    },
+    {
+        "sobject": "Case",
+        "saveRefs": true,
+        "resolveRefs": true,
+        "files": [
+            "Cases.json"
+        ]
+    }
+    
+]

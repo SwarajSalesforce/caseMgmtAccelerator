@@ -1,0 +1,22 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef1"
+            },
+            "AccountId": "@AccountRef1",
+            "Case_Type__c": "Booking",
+            "Closed_Case_Reason__c": "TBD",
+            "ContactId": "@ContactRef1",
+            "EntitlementId": "@EntitlementRef1",
+            "Liner_brand__c": "Wholesale",
+            "Origin": "Phone",
+            "Priority": "Medium",
+            "Status": "New",
+            "SuppliedEmail": "swaraj1933@gmail.com",
+            "SuppliedPhone": "+61470653024",
+            "Suppress_Email_Alerts__c": false
+        }
+    ]
+}

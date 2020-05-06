@@ -1,0 +1,25 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Contact",
+                "referenceId": "ContactRef1"
+            },
+            "AccountId": "@AccountRef1",
+            "CleanStatus": "Pending",
+            "Country__c": "Australia",
+            "DoNotCall": false,
+            "Feedback_Opt_In__c": false,
+            "FirstName": "Swaraj",
+            "HasOptedOutOfEmail": false,
+            "HasOptedOutOfFax": false,
+            "LastName": "Behera",
+            "Liner_Brand__c": "Retail",
+            "Notification_Opt_In__c": false,
+            "Preferred_Language__c": "English",
+            "Preferred_Notification_Channel__c": "Email",
+            "Salutation": "Mr.",
+            "Summary_Notifications__c": false
+        }
+    ]
+}

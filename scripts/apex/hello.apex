@@ -5,6 +5,14 @@
 // You can also execute the entire file by running the command:
 //     SFDX: Execute Anonymous Apex with Editor Contents
 
-string tempvar = 'Enter_your_name_here';
-System.debug('Hello World!');
-System.debug('My name is ' + tempvar);
+List<case> caselist = [select id from case];
+delete caselist;
+
+List<entitlement> lstentitle = [SELECT id from entitlement ];
+delete lstentitle;
+
+List<contact> contactList = [select id from contact];
+delete contactList;
+
+List<Account> accountList = [select id from Account];
+delete accountList;

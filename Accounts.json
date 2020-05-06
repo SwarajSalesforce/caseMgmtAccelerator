@@ -1,0 +1,25 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef1"
+            },
+            "BillingCity": "Docklands",
+            "BillingCountry": "Australia",
+            "BillingPostalCode": "3008",
+            "BillingState": "VIC",
+            "BillingStreet": "595 COLLINS",
+            "Care_Level__c": "Gold",
+            "CleanStatus": "Pending",
+            "Industry": "Communications",
+            "Name": "Swaraj Behera",
+            "NumberOfEmployees": 500,
+            "Ownership": "Public",
+            "Phone": "0470653024",
+            "Rating": "Hot",
+            "Type": "Customer - Direct",
+            "Website": "www.capgemini.com"
+        }
+    ]
+}

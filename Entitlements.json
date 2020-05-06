@@ -1,0 +1,15 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Entitlement",
+                "referenceId": "EntitlementRef1"
+            },
+            "AccountId": "@AccountRef1",
+            "EndDate": "2020-05-31",
+            "Name": "Entitlement Cap",
+            "StartDate": "2020-05-03",
+            "Type": "Phone Support"
+        }
+    ]
+}
