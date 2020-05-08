@@ -2,6 +2,13 @@
 <Bot xmlns="http://soap.sforce.com/2006/04/metadata">
     <botMlDomain>
         <label>Codey</label>
+        <mlSlotClasses>
+            <dataType>Text</dataType>
+            <developerName>CaseNumberString</developerName>
+            <extractionRegex>^[0-9]{8}$</extractionRegex>
+            <extractionType>Pattern</extractionType>
+            <label>CaseNumberString</label>
+        </mlSlotClasses>
         <name>Codey</name>
     </botMlDomain>
     <contextVariables>

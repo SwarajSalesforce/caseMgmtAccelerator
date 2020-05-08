@@ -1,4 +1,4 @@
-public without sharing class Bot_GetCaseStatus {
+public with sharing class Bot_GetCaseStatus {
     public Bot_GetCaseStatus() {
         System.debug('Inside constructor');
     }

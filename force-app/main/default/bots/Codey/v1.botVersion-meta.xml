@@ -11,6 +11,58 @@
     </botDialogs>
     <botDialogs>
         <botSteps>
+            <botVariableOperation>
+                <botMessages>
+                    <message>What&#39;s your Case Number? (Note: This is an 8 digit number)</message>
+                </botMessages>
+                <botVariableOperands>
+                    <disableAutoFill>false</disableAutoFill>
+                    <sourceName>CaseNumberString</sourceName>
+                    <sourceType>MlSlotClass</sourceType>
+                    <targetName>CaseNumber1</targetName>
+                    <targetType>ConversationVariable</targetType>
+                </botVariableOperands>
+                <optionalCollect>false</optionalCollect>
+                <quickReplyWidgetType>Buttons</quickReplyWidgetType>
+                <type>Collect</type>
+            </botVariableOperation>
+            <type>VariableOperation</type>
+        </botSteps>
+        <botSteps>
+            <botMessages>
+                <message>Sure, let me look up the Case Number {!CaseNumber1} for you.</message>
+            </botMessages>
+            <type>Message</type>
+        </botSteps>
+        <botSteps>
+            <botVariableOperation>
+                <botInvocation>
+                    <invocationActionName>Bot_GetCaseStatus</invocationActionName>
+                    <invocationActionType>apex</invocationActionType>
+                    <invocationMappings>
+                        <parameterName>sCaseNumber</parameterName>
+                        <type>Input</type>
+                        <variableName>CaseNumber1</variableName>
+                        <variableType>ConversationVariable</variableType>
+                    </invocationMappings>
+                    <invocationMappings>
+                        <parameterName>sCaseStatus</parameterName>
+                        <type>Output</type>
+                        <variableName>CaseStatus</variableName>
+                        <variableType>ConversationVariable</variableType>
+                    </invocationMappings>
+                </botInvocation>
+                <type>Set</type>
+            </botVariableOperation>
+            <type>VariableOperation</type>
+        </botSteps>
+        <botSteps>
+            <botMessages>
+                <message>Status of your case is {!CaseStatus}</message>
+            </botMessages>
+            <type>Message</type>
+        </botSteps>
+        <botSteps>
             <type>Wait</type>
         </botSteps>
         <developerName>Case_Status</developerName>
@@ -58,7 +110,7 @@
         </botSteps>
         <developerName>Main_Menu</developerName>
         <label>Main Menu</label>
-        <showInFooterMenu>false</showInFooterMenu>
+        <showInFooterMenu>true</showInFooterMenu>
     </botDialogs>
     <botDialogs>
         <botSteps>
@@ -117,6 +169,16 @@
         <dialog>No_Agent_Available</dialog>
         <type>TransferFailed</type>
     </conversationSystemDialogs>
+    <conversationVariables>
+        <dataType>Text</dataType>
+        <developerName>CaseNumber1</developerName>
+        <label>CaseNumber1</label>
+    </conversationVariables>
+    <conversationVariables>
+        <dataType>Text</dataType>
+        <developerName>CaseStatus</developerName>
+        <label>CaseStatus</label>
+    </conversationVariables>
     <entryDialog>Welcome</entryDialog>
     <mainMenuDialog>Main_Menu</mainMenuDialog>
 </BotVersion>
