@@ -3,20 +3,102 @@
     <fullName>v1</fullName>
     <botDialogs>
         <botSteps>
+            <botMessages>
+                <message>To create a New Case, I need to collect some information.</message>
+            </botMessages>
+            <type>Message</type>
+        </botSteps>
+        <botSteps>
+            <botVariableOperation>
+                <botMessages>
+                    <message>What is your Liner Brand?</message>
+                </botMessages>
+                <botQuickReplyOptions>
+                    <literalValue>Retail</literalValue>
+                </botQuickReplyOptions>
+                <botQuickReplyOptions>
+                    <literalValue>Wholesale</literalValue>
+                </botQuickReplyOptions>
+                <botQuickReplyOptions>
+                    <literalValue>Liquor</literalValue>
+                </botQuickReplyOptions>
+                <botVariableOperands>
+                    <disableAutoFill>false</disableAutoFill>
+                    <sourceName>Lbrand</sourceName>
+                    <sourceType>MlSlotClass</sourceType>
+                    <targetName>LinerBrand</targetName>
+                    <targetType>ConversationVariable</targetType>
+                </botVariableOperands>
+                <optionalCollect>false</optionalCollect>
+                <quickReplyType>Static</quickReplyType>
+                <quickReplyWidgetType>Buttons</quickReplyWidgetType>
+                <type>Collect</type>
+            </botVariableOperation>
+            <type>VariableOperation</type>
+        </botSteps>
+        <botSteps>
+            <botMessages>
+                <message>Thank you.</message>
+            </botMessages>
+            <type>Message</type>
+        </botSteps>
+        <botSteps>
+            <botVariableOperation>
+                <botMessages>
+                    <message>Please give me a description of your issue or inquiry.</message>
+                </botMessages>
+                <botVariableOperands>
+                    <disableAutoFill>true</disableAutoFill>
+                    <sourceName>CaseDescription</sourceName>
+                    <sourceType>MlSlotClass</sourceType>
+                    <targetName>CaseDescription</targetName>
+                    <targetType>ConversationVariable</targetType>
+                </botVariableOperands>
+                <optionalCollect>false</optionalCollect>
+                <quickReplyWidgetType>Buttons</quickReplyWidgetType>
+                <type>Collect</type>
+            </botVariableOperation>
+            <type>VariableOperation</type>
+        </botSteps>
+        <botSteps>
+            <botMessages>
+                <message>Thank you. I have recorded your information and created a case for you. You will be sent a confirmation email with your Case Number shortly. Our Service Agents will work on resolving your case as soon as possible.</message>
+            </botMessages>
+            <type>Message</type>
+        </botSteps>
+        <botSteps>
+            <botStepConditions>
+                <leftOperandName>LinerBrand</leftOperandName>
+                <leftOperandType>ConversationVariable</leftOperandType>
+                <operatorType>IsSet</operatorType>
+            </botStepConditions>
+            <botSteps>
+                <botVariableOperation>
+                    <botVariableOperands>
+                        <targetName>LinerBrand</targetName>
+                        <targetType>ConversationVariable</targetType>
+                    </botVariableOperands>
+                    <type>Unset</type>
+                </botVariableOperation>
+                <type>VariableOperation</type>
+            </botSteps>
+            <type>Group</type>
+        </botSteps>
+        <botSteps>
             <type>Wait</type>
         </botSteps>
         <developerName>Inquiry</developerName>
-        <label>Inquiry</label>
+        <label>New Case</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
     <botDialogs>
         <botSteps>
             <botVariableOperation>
                 <botMessages>
-                    <message>What&#39;s your Case Number? (Note: This is an 8 digit number)</message>
+                    <message>What&#39;s your Case Number? (This is an 8 digit number)</message>
                 </botMessages>
                 <botVariableOperands>
-                    <disableAutoFill>false</disableAutoFill>
+                    <disableAutoFill>true</disableAutoFill>
                     <sourceName>CaseNumberString</sourceName>
                     <sourceType>MlSlotClass</sourceType>
                     <targetName>CaseNumber1</targetName>
@@ -58,15 +140,57 @@
         </botSteps>
         <botSteps>
             <botMessages>
-                <message>Status of your case is {!CaseStatus}</message>
+                <message>The status of your case is &quot;{!CaseStatus}&quot;.</message>
             </botMessages>
             <type>Message</type>
         </botSteps>
         <botSteps>
-            <type>Wait</type>
+            <botStepConditions>
+                <leftOperandName>CaseNumber1</leftOperandName>
+                <leftOperandType>ConversationVariable</leftOperandType>
+                <operatorType>IsSet</operatorType>
+            </botStepConditions>
+            <botSteps>
+                <botVariableOperation>
+                    <botVariableOperands>
+                        <targetName>CaseNumber1</targetName>
+                        <targetType>ConversationVariable</targetType>
+                    </botVariableOperands>
+                    <type>Unset</type>
+                </botVariableOperation>
+                <type>VariableOperation</type>
+            </botSteps>
+            <botSteps>
+                <botVariableOperation>
+                    <botVariableOperands>
+                        <targetName>CaseStatus</targetName>
+                        <targetType>ConversationVariable</targetType>
+                    </botVariableOperands>
+                    <type>Unset</type>
+                </botVariableOperation>
+                <type>VariableOperation</type>
+            </botSteps>
+            <type>Group</type>
+        </botSteps>
+        <botSteps>
+            <botMessages>
+                <message>Is there anything else I can help you with?</message>
+            </botMessages>
+            <type>Message</type>
+        </botSteps>
+        <botSteps>
+            <botNavigation>
+                <botNavigationLinks>
+                    <targetBotDialog>Main_Menu</targetBotDialog>
+                </botNavigationLinks>
+                <type>Redirect</type>
+            </botNavigation>
+            <type>Navigation</type>
         </botSteps>
         <developerName>Case_Status</developerName>
         <label>Case Status</label>
+        <mlIntent>Case_Status</mlIntent>
+        <mlIntentTrainingEnabled>false</mlIntentTrainingEnabled>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
     <botDialogs>
@@ -165,10 +289,51 @@
         <label>No Agent</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
+    <botDialogs>
+        <botSteps>
+            <botVariableOperation>
+                <botInvocation>
+                    <invocationActionName>Bot_GetTranscriptVariables</invocationActionName>
+                    <invocationActionType>apex</invocationActionType>
+                    <invocationMappings>
+                        <parameterName>routableID</parameterName>
+                        <type>Input</type>
+                        <variableName>RoutableId</variableName>
+                        <variableType>ContextVariable</variableType>
+                    </invocationMappings>
+                    <invocationMappings>
+                        <parameterName>contactId</parameterName>
+                        <type>Output</type>
+                        <variableName>ContactId</variableName>
+                        <variableType>ConversationVariable</variableType>
+                    </invocationMappings>
+                </botInvocation>
+                <type>Set</type>
+            </botVariableOperation>
+            <type>VariableOperation</type>
+        </botSteps>
+        <botSteps>
+            <botNavigation>
+                <botNavigationLinks>
+                    <targetBotDialog>Main_Menu</targetBotDialog>
+                </botNavigationLinks>
+                <type>Redirect</type>
+            </botNavigation>
+            <type>Navigation</type>
+        </botSteps>
+        <developerName>Bot_Initialization</developerName>
+        <label>Intialization</label>
+        <showInFooterMenu>true</showInFooterMenu>
+    </botDialogs>
     <conversationSystemDialogs>
         <dialog>No_Agent_Available</dialog>
         <type>TransferFailed</type>
     </conversationSystemDialogs>
+    <conversationVariables>
+        <dataType>Text</dataType>
+        <developerName>CaseDescription</developerName>
+        <label>CaseDescription</label>
+    </conversationVariables>
     <conversationVariables>
         <dataType>Text</dataType>
         <developerName>CaseNumber1</developerName>
@@ -179,6 +344,17 @@
         <developerName>CaseStatus</developerName>
         <label>CaseStatus</label>
     </conversationVariables>
-    <entryDialog>Welcome</entryDialog>
+    <conversationVariables>
+        <dataType>Id</dataType>
+        <developerName>ContactId</developerName>
+        <label>ContactId</label>
+    </conversationVariables>
+    <conversationVariables>
+        <dataType>Text</dataType>
+        <developerName>LinerBrand</developerName>
+        <label>LinerBrand</label>
+    </conversationVariables>
+    <entryDialog>Bot_Initialization</entryDialog>
     <mainMenuDialog>Main_Menu</mainMenuDialog>
+    <responseDelayMilliseconds>3000</responseDelayMilliseconds>
 </BotVersion>
