@@ -13,131 +13,67 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Arrival Notice</fullName>
+                <fullName>General</fullName>
                 <default>false</default>
-                <label>Arrival Notice</label>
+                <label>General</label>
             </value>
             <value>
-                <fullName>Bill</fullName>
+                <fullName>Product</fullName>
                 <default>false</default>
-                <label>Bill</label>
+                <label>Product</label>
             </value>
             <value>
-                <fullName>Booking Amendment</fullName>
+                <fullName>Online Order</fullName>
                 <default>false</default>
-                <label>Booking Amendment</label>
+                <label>Online Order</label>
             </value>
             <value>
-                <fullName>Booking Cancellation</fullName>
+                <fullName>Order Request</fullName>
                 <default>false</default>
-                <label>Booking Cancellation</label>
+                <label>Order Request</label>
             </value>
             <value>
-                <fullName>Booking Request</fullName>
+                <fullName>Order Cancellation</fullName>
                 <default>false</default>
-                <label>Booking Request</label>
+                <label>Order Cancellation</label>
             </value>
             <value>
-                <fullName>Customs Manifest</fullName>
+                <fullName>Order Amendment</fullName>
                 <default>false</default>
-                <label>Customs Manifest</label>
-            </value>
-            <value>
-                <fullName>Invoice Amendment/Dispute</fullName>
-                <default>false</default>
-                <label>Invoice Amendment/Dispute</label>
-            </value>
-            <value>
-                <fullName>Invoice Request/Query</fullName>
-                <default>false</default>
-                <label>Invoice Request/Query</label>
-            </value>
-            <value>
-                <fullName>Pre-Booking Enquiry</fullName>
-                <default>false</default>
-                <label>Pre-Booking Enquiry</label>
-            </value>
-            <value>
-                <fullName>Shipping Instruction</fullName>
-                <default>false</default>
-                <label>Shipping Instruction</label>
-            </value>
-            <value>
-                <fullName>Spam</fullName>
-                <default>false</default>
-                <label>Spam</label>
-            </value>
-            <value>
-                <fullName>Supplementary Booking Info</fullName>
-                <default>false</default>
-                <label>Supplementary Booking Info</label>
-            </value>
-            <value>
-                <fullName>Verify Copy</fullName>
-                <default>false</default>
-                <label>Verify Copy</label>
-            </value>
-            <value>
-                <fullName>Waiver Request</fullName>
-                <default>false</default>
-                <label>Waiver Request</label>
+                <label>Order Amendment</label>
             </value>
         </valueSetDefinition>
         <valueSettings>
-            <controllingFieldValue>Booking</controllingFieldValue>
-            <valueName>Booking Amendment</valueName>
+            <controllingFieldValue>General Inquiry</controllingFieldValue>
+            <controllingFieldValue>Online Order Inquiry</controllingFieldValue>
+            <controllingFieldValue>Feedback</controllingFieldValue>
+            <controllingFieldValue>Complaint</controllingFieldValue>
+            <valueName>General</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>Booking</controllingFieldValue>
-            <valueName>Booking Cancellation</valueName>
+            <controllingFieldValue>General Inquiry</controllingFieldValue>
+            <controllingFieldValue>Online Order Inquiry</controllingFieldValue>
+            <controllingFieldValue>Feedback</controllingFieldValue>
+            <controllingFieldValue>Complaint</controllingFieldValue>
+            <valueName>Product</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>Booking</controllingFieldValue>
-            <valueName>Booking Request</valueName>
+            <controllingFieldValue>General Inquiry</controllingFieldValue>
+            <controllingFieldValue>Feedback</controllingFieldValue>
+            <controllingFieldValue>Complaint</controllingFieldValue>
+            <valueName>Online Order</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>Booking</controllingFieldValue>
-            <valueName>Pre-Booking Enquiry</valueName>
+            <controllingFieldValue>Online Order Inquiry</controllingFieldValue>
+            <valueName>Order Request</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>Booking</controllingFieldValue>
-            <valueName>Supplementary Booking Info</valueName>
+            <controllingFieldValue>Online Order Inquiry</controllingFieldValue>
+            <valueName>Order Cancellation</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>Documentation</controllingFieldValue>
-            <valueName>Arrival Notice</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Documentation</controllingFieldValue>
-            <valueName>Bill</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Documentation</controllingFieldValue>
-            <valueName>Customs Manifest</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Documentation</controllingFieldValue>
-            <valueName>Shipping Instruction</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Documentation</controllingFieldValue>
-            <valueName>Verify Copy</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Invoicing</controllingFieldValue>
-            <valueName>Invoice Amendment/Dispute</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Invoicing</controllingFieldValue>
-            <valueName>Invoice Request/Query</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Invoicing</controllingFieldValue>
-            <valueName>Waiver Request</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Spam</controllingFieldValue>
-            <valueName>Spam</valueName>
+            <controllingFieldValue>Online Order Inquiry</controllingFieldValue>
+            <valueName>Order Amendment</valueName>
         </valueSettings>
     </valueSet>
 </CustomField>

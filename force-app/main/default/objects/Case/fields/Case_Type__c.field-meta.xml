@@ -12,24 +12,24 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Booking</fullName>
-                <default>true</default>
-                <label>Booking</label>
+                <fullName>General Inquiry</fullName>
+                <default>false</default>
+                <label>General Inquiry</label>
             </value>
             <value>
-                <fullName>Documentation</fullName>
+                <fullName>Online Order Inquiry</fullName>
                 <default>false</default>
-                <label>Documentation</label>
+                <label>Online Order Inquiry</label>
             </value>
             <value>
-                <fullName>Invoicing</fullName>
+                <fullName>Feedback</fullName>
                 <default>false</default>
-                <label>Invoicing</label>
+                <label>Feedback</label>
             </value>
             <value>
-                <fullName>Spam</fullName>
+                <fullName>Complaint</fullName>
                 <default>false</default>
-                <label>Spam</label>
+                <label>Complaint</label>
             </value>
         </valueSetDefinition>
     </valueSet>

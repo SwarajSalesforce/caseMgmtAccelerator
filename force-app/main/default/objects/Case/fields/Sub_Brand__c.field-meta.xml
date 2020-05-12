@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Brand__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub Brand</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Liner_brand__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Coles Supermarkets</fullName>
+                <default>false</default>
+                <label>Coles Supermarkets</label>
+            </value>
+            <value>
+                <fullName>Coles Local</fullName>
+                <default>false</default>
+                <label>Coles Local</label>
+            </value>
+            <value>
+                <fullName>Liquorland</fullName>
+                <default>false</default>
+                <label>Liquorland</label>
+            </value>
+            <value>
+                <fullName>First Choice</fullName>
+                <default>false</default>
+                <label>First Choice</label>
+            </value>
+            <value>
+                <fullName>Vintage Cellars</fullName>
+                <default>false</default>
+                <label>Vintage Cellars</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Supermarkets</controllingFieldValue>
+            <valueName>Coles Supermarkets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Supermarkets</controllingFieldValue>
+            <valueName>Coles Local</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Liquor Retail</controllingFieldValue>
+            <valueName>Liquorland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Liquor Retail</controllingFieldValue>
+            <valueName>First Choice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Liquor Retail</controllingFieldValue>
+            <valueName>Vintage Cellars</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>
