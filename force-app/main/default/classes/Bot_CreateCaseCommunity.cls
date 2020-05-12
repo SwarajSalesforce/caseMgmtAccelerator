@@ -7,6 +7,12 @@ public with sharing class Bot_CreateCaseCommunity {
         public String contactId;
         @InvocableVariable(required=true)
         public String linearBrand;
+        @InvocableVariable(required=true)
+        public String subject;
+        @InvocableVariable(required=true)
+        public String productLine;
+        @InvocableVariable(required=true)
+        public String description;
     }
     public class CaseOutput{
         @InvocableVariable(required=true)
@@ -21,6 +27,9 @@ public with sharing class Bot_CreateCaseCommunity {
             newcase.ContactId = caseDetail.contactId;
             newcase.Liner_brand__c = caseDetail.linearBrand;
             newcase.Origin = 'Web';   
+            newcase.Product__c = caseDetail.productLine;
+            newcase.Subject = caseDetail.subject;
+            newcase.Description = caseDetail.description;
             caseList.add(newCase);
         }
         database.saveresult[] results = database.insert(caseList, false);
