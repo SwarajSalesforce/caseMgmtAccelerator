@@ -45,6 +45,77 @@
         <botSteps>
             <botVariableOperation>
                 <botMessages>
+                    <message>What is your case regarding?</message>
+                </botMessages>
+                <botQuickReplyOptions>
+                    <literalValue>General Inquiry</literalValue>
+                </botQuickReplyOptions>
+                <botQuickReplyOptions>
+                    <literalValue>Online Order Inquiry</literalValue>
+                </botQuickReplyOptions>
+                <botQuickReplyOptions>
+                    <literalValue>Product Complaint</literalValue>
+                </botQuickReplyOptions>
+                <botVariableOperands>
+                    <disableAutoFill>true</disableAutoFill>
+                    <sourceName>CaseSubject</sourceName>
+                    <sourceType>MlSlotClass</sourceType>
+                    <targetName>CaseSubject</targetName>
+                    <targetType>ConversationVariable</targetType>
+                </botVariableOperands>
+                <optionalCollect>false</optionalCollect>
+                <quickReplyType>Static</quickReplyType>
+                <quickReplyWidgetType>Buttons</quickReplyWidgetType>
+                <type>Collect</type>
+            </botVariableOperation>
+            <type>VariableOperation</type>
+        </botSteps>
+        <botSteps>
+            <botMessages>
+                <message>Thank you.</message>
+            </botMessages>
+            <type>Message</type>
+        </botSteps>
+        <botSteps>
+            <botVariableOperation>
+                <botMessages>
+                    <message>Please select the most applicable Product Line for your case.</message>
+                </botMessages>
+                <botQuickReplyOptions>
+                    <literalValue>Bread &amp; Bakery</literalValue>
+                </botQuickReplyOptions>
+                <botQuickReplyOptions>
+                    <literalValue>Fruit &amp; Vegetables</literalValue>
+                </botQuickReplyOptions>
+                <botQuickReplyOptions>
+                    <literalValue>Meat, Seafood &amp; Deli</literalValue>
+                </botQuickReplyOptions>
+                <botQuickReplyOptions>
+                    <literalValue>Household</literalValue>
+                </botQuickReplyOptions>
+                <botVariableOperands>
+                    <disableAutoFill>true</disableAutoFill>
+                    <sourceName>ProductLine</sourceName>
+                    <sourceType>MlSlotClass</sourceType>
+                    <targetName>ProductLine</targetName>
+                    <targetType>ConversationVariable</targetType>
+                </botVariableOperands>
+                <optionalCollect>false</optionalCollect>
+                <quickReplyType>Static</quickReplyType>
+                <quickReplyWidgetType>Buttons</quickReplyWidgetType>
+                <type>Collect</type>
+            </botVariableOperation>
+            <type>VariableOperation</type>
+        </botSteps>
+        <botSteps>
+            <botMessages>
+                <message>Thank you.</message>
+            </botMessages>
+            <type>Message</type>
+        </botSteps>
+        <botSteps>
+            <botVariableOperation>
+                <botMessages>
                     <message>Please give me a description of your issue or inquiry.</message>
                 </botMessages>
                 <botVariableOperands>
@@ -57,6 +128,52 @@
                 <optionalCollect>false</optionalCollect>
                 <quickReplyWidgetType>Buttons</quickReplyWidgetType>
                 <type>Collect</type>
+            </botVariableOperation>
+            <type>VariableOperation</type>
+        </botSteps>
+        <botSteps>
+            <botVariableOperation>
+                <botInvocation>
+                    <invocationActionName>Bot_CreateCaseCommunity</invocationActionName>
+                    <invocationActionType>apex</invocationActionType>
+                    <invocationMappings>
+                        <parameterName>productLine</parameterName>
+                        <type>Input</type>
+                        <variableName>ProductLine</variableName>
+                        <variableType>ConversationVariable</variableType>
+                    </invocationMappings>
+                    <invocationMappings>
+                        <parameterName>linearBrand</parameterName>
+                        <type>Input</type>
+                        <variableName>LinerBrand</variableName>
+                        <variableType>ConversationVariable</variableType>
+                    </invocationMappings>
+                    <invocationMappings>
+                        <parameterName>contactId</parameterName>
+                        <type>Input</type>
+                        <variableName>ContactId</variableName>
+                        <variableType>ContextVariable</variableType>
+                    </invocationMappings>
+                    <invocationMappings>
+                        <parameterName>subject</parameterName>
+                        <type>Input</type>
+                        <variableName>CaseSubject</variableName>
+                        <variableType>ConversationVariable</variableType>
+                    </invocationMappings>
+                    <invocationMappings>
+                        <parameterName>description</parameterName>
+                        <type>Input</type>
+                        <variableName>CaseDescription</variableName>
+                        <variableType>ConversationVariable</variableType>
+                    </invocationMappings>
+                    <invocationMappings>
+                        <parameterName>caseNumber</parameterName>
+                        <type>Output</type>
+                        <variableName>CaseNumber1</variableName>
+                        <variableType>ConversationVariable</variableType>
+                    </invocationMappings>
+                </botInvocation>
+                <type>Set</type>
             </botVariableOperation>
             <type>VariableOperation</type>
         </botSteps>
@@ -85,7 +202,19 @@
             <type>Group</type>
         </botSteps>
         <botSteps>
-            <type>Wait</type>
+            <botMessages>
+                <message>Is there anything else I can help you with?</message>
+            </botMessages>
+            <type>Message</type>
+        </botSteps>
+        <botSteps>
+            <botNavigation>
+                <botNavigationLinks>
+                    <targetBotDialog>Main_Menu</targetBotDialog>
+                </botNavigationLinks>
+                <type>Redirect</type>
+            </botNavigation>
+            <type>Navigation</type>
         </botSteps>
         <developerName>Inquiry</developerName>
         <label>New Case</label>
@@ -291,26 +420,10 @@
     </botDialogs>
     <botDialogs>
         <botSteps>
-            <botVariableOperation>
-                <botInvocation>
-                    <invocationActionName>Bot_GetTranscriptVariables</invocationActionName>
-                    <invocationActionType>apex</invocationActionType>
-                    <invocationMappings>
-                        <parameterName>routableID</parameterName>
-                        <type>Input</type>
-                        <variableName>RoutableId</variableName>
-                        <variableType>ContextVariable</variableType>
-                    </invocationMappings>
-                    <invocationMappings>
-                        <parameterName>contactId</parameterName>
-                        <type>Output</type>
-                        <variableName>ContactId</variableName>
-                        <variableType>ConversationVariable</variableType>
-                    </invocationMappings>
-                </botInvocation>
-                <type>Set</type>
-            </botVariableOperation>
-            <type>VariableOperation</type>
+            <botMessages>
+                <message>Hello! I&#39;m Codey the Customer Service Chatbot. How can I help you?</message>
+            </botMessages>
+            <type>Message</type>
         </botSteps>
         <botSteps>
             <botNavigation>
@@ -345,6 +458,11 @@
         <label>CaseStatus</label>
     </conversationVariables>
     <conversationVariables>
+        <dataType>Text</dataType>
+        <developerName>CaseSubject</developerName>
+        <label>CaseSubject</label>
+    </conversationVariables>
+    <conversationVariables>
         <dataType>Id</dataType>
         <developerName>ContactId</developerName>
         <label>ContactId</label>
@@ -353,6 +471,11 @@
         <dataType>Text</dataType>
         <developerName>LinerBrand</developerName>
         <label>LinerBrand</label>
+    </conversationVariables>
+    <conversationVariables>
+        <dataType>Text</dataType>
+        <developerName>ProductLine</developerName>
+        <label>ProductLine</label>
     </conversationVariables>
     <entryDialog>Bot_Initialization</entryDialog>
     <mainMenuDialog>Main_Menu</mainMenuDialog>

@@ -21,9 +21,21 @@
         </mlSlotClasses>
         <mlSlotClasses>
             <dataType>Text</dataType>
+            <developerName>CaseSubject</developerName>
+            <extractionType>Value</extractionType>
+            <label>CaseSubject</label>
+        </mlSlotClasses>
+        <mlSlotClasses>
+            <dataType>Text</dataType>
             <developerName>Lbrand</developerName>
             <extractionType>Value</extractionType>
             <label>Lbrand</label>
+        </mlSlotClasses>
+        <mlSlotClasses>
+            <dataType>Text</dataType>
+            <developerName>ProductLine</developerName>
+            <extractionType>Value</extractionType>
+            <label>ProductLine</label>
         </mlSlotClasses>
         <name>Codey</name>
     </botMlDomain>
