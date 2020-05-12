@@ -24,12 +24,12 @@ public with sharing class Bot_CreateCaseCommunity {
         List<CaseOutput> caseOutputList = new List<CaseOutput>();
         for(CaseInput caseDetail : caseInputs){
             case newCase = new case();
-            newcase.ContactId = caseDetail.contactId;
-            newcase.Liner_brand__c = caseDetail.linearBrand;
-            newcase.Origin = 'Web';   
-            newcase.Product__c = caseDetail.productLine;
-            newcase.Subject = caseDetail.subject;
-            newcase.Description = caseDetail.description;
+            newCase.ContactId = caseDetail.contactId;
+            newCase.Liner_brand__c = caseDetail.linearBrand;
+            newCase.Origin = 'Web';   
+            newCase.Product__c = caseDetail.productLine;
+            newCase.Subject = caseDetail.subject;
+            newCase.Description = caseDetail.description;
             caseList.add(newCase);
         }
         database.saveresult[] results = database.insert(caseList, false);
