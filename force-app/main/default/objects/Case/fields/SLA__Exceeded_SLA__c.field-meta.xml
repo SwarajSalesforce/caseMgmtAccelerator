@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SLA__Exceeded_SLA__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>AND(
+IsClosed = false,
+$CustomMetadata.SLA__Service_Level_Agreement__mdt.SLA__SLA.SLA__SLA_Enabled__c = true,
+(((NOW() - CreatedDate )*24) &gt; $CustomMetadata.SLA__Service_Level_Agreement__mdt.SLA__SLA.SLA__Hours__c)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Exceeded SLA</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

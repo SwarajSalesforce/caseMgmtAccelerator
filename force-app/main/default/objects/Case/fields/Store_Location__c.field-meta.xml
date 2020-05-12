@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Store_Location__c</fullName>
+    <externalId>false</externalId>
+    <label>Store Location</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Coles Endeavour Hills (VIC)</fullName>
+                <default>false</default>
+                <label>Coles Endeavour Hills (VIC)</label>
+            </value>
+            <value>
+                <fullName>Coles Essendon (VIC)</fullName>
+                <default>false</default>
+                <label>Coles Essendon (VIC)</label>
+            </value>
+            <value>
+                <fullName>Coles Footscray (VIC)</fullName>
+                <default>false</default>
+                <label>Coles Footscray (VIC)</label>
+            </value>
+            <value>
+                <fullName>Coles Glenroy (VIC)</fullName>
+                <default>false</default>
+                <label>Coles Glenroy (VIC)</label>
+            </value>
+            <value>
+                <fullName>Coles Kew (VIC)</fullName>
+                <default>false</default>
+                <label>Coles Kew (VIC)</label>
+            </value>
+            <value>
+                <fullName>Coles Oakleigh (VIC)</fullName>
+                <default>false</default>
+                <label>Coles Oakleigh (VIC)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

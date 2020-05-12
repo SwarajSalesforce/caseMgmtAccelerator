@@ -12,49 +12,84 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>GC1040</fullName>
+                <fullName>Bread &amp; Bakery</fullName>
                 <default>false</default>
-                <label>GC1040</label>
+                <label>Bread &amp; Bakery</label>
             </value>
             <value>
-                <fullName>GC1060</fullName>
+                <fullName>Fruit &amp; Vegetables</fullName>
                 <default>false</default>
-                <label>GC1060</label>
+                <label>Fruit &amp; Vegetables</label>
             </value>
             <value>
-                <fullName>GC3020</fullName>
+                <fullName>Meat, Seafood &amp; Deli</fullName>
                 <default>false</default>
-                <label>GC3020</label>
+                <label>Meat, Seafood &amp; Deli</label>
             </value>
             <value>
-                <fullName>GC3040</fullName>
+                <fullName>Dairy, Eggs and Meals</fullName>
                 <default>false</default>
-                <label>GC3040</label>
+                <label>Dairy, Eggs and Meals</label>
             </value>
             <value>
-                <fullName>GC3060</fullName>
+                <fullName>Pantry</fullName>
                 <default>false</default>
-                <label>GC3060</label>
+                <label>Pantry</label>
             </value>
             <value>
-                <fullName>GC5020</fullName>
+                <fullName>Convenience Meals</fullName>
                 <default>false</default>
-                <label>GC5020</label>
+                <label>Convenience Meals</label>
             </value>
             <value>
-                <fullName>GC5040</fullName>
+                <fullName>Frozen</fullName>
                 <default>false</default>
-                <label>GC5040</label>
+                <label>Frozen</label>
             </value>
             <value>
-                <fullName>GC5060</fullName>
+                <fullName>Drinks</fullName>
                 <default>false</default>
-                <label>GC5060</label>
+                <label>Drinks</label>
             </value>
             <value>
-                <fullName>GC1020</fullName>
+                <fullName>Liquor</fullName>
                 <default>false</default>
-                <label>GC1020</label>
+                <label>Liquor</label>
+            </value>
+            <value>
+                <fullName>International Foods</fullName>
+                <default>false</default>
+                <label>International Foods</label>
+            </value>
+            <value>
+                <fullName>Healthy Living</fullName>
+                <default>false</default>
+                <label>Healthy Living</label>
+            </value>
+            <value>
+                <fullName>Household</fullName>
+                <default>false</default>
+                <label>Household</label>
+            </value>
+            <value>
+                <fullName>Health &amp; Beauty</fullName>
+                <default>false</default>
+                <label>Health &amp; Beauty</label>
+            </value>
+            <value>
+                <fullName>Baby</fullName>
+                <default>false</default>
+                <label>Baby</label>
+            </value>
+            <value>
+                <fullName>Pet</fullName>
+                <default>false</default>
+                <label>Pet</label>
+            </value>
+            <value>
+                <fullName>Tobacco</fullName>
+                <default>false</default>
+                <label>Tobacco</label>
             </value>
         </valueSetDefinition>
     </valueSet>
