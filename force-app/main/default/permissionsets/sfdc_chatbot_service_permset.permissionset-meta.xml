@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <classAccesses>
+        <apexClass>Bot_CreateCaseCommunity</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>Bot_GetCaseStatus</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Bot_GetTranscriptVariables</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <hasActivationRequired>true</hasActivationRequired>
