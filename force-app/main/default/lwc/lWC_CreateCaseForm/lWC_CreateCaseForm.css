@@ -1,0 +1,26 @@
+body{
+    background:rgb(216, 237, 255);
+}
+.styleRecordForm{
+    width: 564px;
+    margin: 32px auto;
+    padding: 40px 32px;
+    border: 2px solid #686565;
+    border-radius: 20px;
+    color:#222121;
+}
+
+p {
+    font-size: 16px;
+    line-height: 22px;
+    font-family: "Source Sans", sans-serif;
+    color: #3f4140;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 16px;
+    line-height: 1.875;
+
+}

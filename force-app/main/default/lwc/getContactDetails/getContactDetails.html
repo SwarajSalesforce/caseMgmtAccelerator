@@ -1,10 +1,10 @@
-<!-- wireGetRecordDynamicContact.html -->
 <template>
-    <lightning-card title="My Contact Record" icon-name="standard:contact">
-        <template if:true={hasCaseData}>
-            <div class="slds-m-around_medium">
-                <p>{contactId}</p>
-                   </div>
-        </template>
+    <lightning-card title="Contact Details" icon-name="custom:custom63">
+        <div class="slds-m-around_medium">
+            {contact}
+            <template if:true={contact}>
+                    <p>{contact.Name}</p>
+            </template>
+        </div>
     </lightning-card>
 </template>
