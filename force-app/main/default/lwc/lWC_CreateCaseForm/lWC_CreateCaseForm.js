@@ -17,13 +17,7 @@ export default class CaseCreator extends NavigationMixin(LightningElement){
     caseObject = CASE_OBJECT;
     myFields = [CONTACT, SUBJECT, BRAND, PRODUCT, DESCRIPTION, PRIORITY, CASETYPE ];
 
-    handleCaseCreated(event){
-        const evt = new ShowToastEvent({
-            title: "Case created",
-            message: "Record ID: " + event.detail.id,
-            variant: "success"
-        });
-        this.dispatchEvent(evt);
+    handleCaseCreated(){
         this[NavigationMixin.Navigate]({
             type: 'comm__namedPage',
             attributes: {
@@ -33,4 +27,9 @@ export default class CaseCreator extends NavigationMixin(LightningElement){
         true
       );
     }
+
+    handleFilesChange(event) {
+    const uploadedFiles = event.detail.files;
+    alert("No. of files uploaded : " + uploadedFiles.length);
+ }
 }
