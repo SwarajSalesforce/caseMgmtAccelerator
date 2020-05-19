@@ -26,10 +26,5 @@ export default class CaseCreator extends NavigationMixin(LightningElement){
         },
         true
       );
-    }
-
-    handleFilesChange(event) {
-    const uploadedFiles = event.detail.files;
-    alert("No. of files uploaded : " + uploadedFiles.length);
  }
 }
