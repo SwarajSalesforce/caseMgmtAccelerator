@@ -1,0 +1,10 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+   <aura:attribute name="attributeName" type="String"/>
+   <div class="c-container">
+      <lightning:layoutItem size="12">
+         <div class="slds-scoped-notification slds-media slds-media_center slds-theme_warning">
+            <p class="p-class">{!v.attributeName}</p>
+         </div>
+      </lightning:layoutItem>
+   </div>
+</aura:component>

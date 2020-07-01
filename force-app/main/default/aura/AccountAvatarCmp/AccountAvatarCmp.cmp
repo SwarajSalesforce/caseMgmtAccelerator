@@ -1,0 +1,55 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+   <aura:attribute name="backgroundImageURL" type="String" default=""/>
+   <aura:attribute name="recordLoadError" type="String"/>
+   <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+   <aura:attribute name="accountRecord" type="Object"/>
+   <force:recordData aura:id="recordLoader"
+      recordId="{!v.recordId}"
+      fields="Flybuys_Number__c,NPS_Score__c"
+      targetFields="{!v.accountRecord}"
+      targetError="{!v.recordLoadError}"
+      />
+    <div class="c-container">
+        <lightning:layout multipleRows="true">
+            <lightning:layoutItem padding="around-small" size="12">
+                <div class="image-class">
+                    <lightning:layoutItem padding="around-small" size="12">
+                       <lightning:layoutItem size="3">
+                        <div class="page-section page-right">
+							<div>
+                            <span class="slds-avatar slds-avatar--large slds-avatar--circle slds-float_left">
+							<img src="{!$Resource.AvatarImage}" />
+							</span>
+                            </div>
+                        </div>
+                        </lightning:layoutItem>
+                        <div class="cpadding">
+                       <lightning:layoutItem size="9">
+                           <lightning:layout multipleRows="true">
+                           <lightning:layoutItem  size="12"> 
+                           <lightning:layout multipleRows="true">
+							  <lightning:layoutItem flexibility="auto"><p class="pcontent">NPS Score</p>
+                               </lightning:layoutItem>
+                               <lightning:layoutItem  flexibility="auto">
+                                    <p class="pcontent"><meter id="disk" value="{!v.accountRecord.NPS_Score__c}" min="0" max="10" style="height: 26px;
+         width: 91px;vertical-align: middle;"></meter>&nbsp;&nbsp;&nbsp;{!v.accountRecord.NPS_Score__c}</p>
+                               </lightning:layoutItem>
+                           </lightning:layout>
+                           </lightning:layoutItem>
+                           <lightning:layoutItem  size="12">
+                               <lightning:layout verticalAlign="stretch" multipleRows="true">
+                                                                  <lightning:layoutItem  flexibility="auto"><p class="pcontent">Flybuys No.</p>
+                                   </lightning:layoutItem>
+                                   <lightning:layoutItem  flexibility="auto"><p class="pcontent">{!v.accountRecord.Flybuys_Number__c}</p>
+                                   </lightning:layoutItem>
+                               </lightning:layout>
+                           </lightning:layoutItem>
+                           </lightning:layout>
+                        </lightning:layoutItem>
+                            </div>
+                    </lightning:layoutItem>                                     
+                    </div>
+            </lightning:layoutItem>                    
+        </lightning:layout>
+    </div>
+</aura:component>

@@ -1,0 +1,26 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" controller="SocialInteractionsController" access="global" >
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute type="Social_Interaction__c[]" name="recordList"/>
+        <aura:attribute type="String" name="resourceName"/>
+
+<aura:iteration items="{!v.recordList}" var="a">
+<div class="demo-only demo-only--sizing slds-grid slds-wrap">
+   <img src="{!'/resource/'+a.Image}" style="height: 30px;
+  width: 30px;"/>
+      <div class="slds-size_1-of-6">
+    <div class="slds-text-align_left">{!a.Type__c}</div>
+    </div>
+  <div class="slds-size_4-of-6">
+    <div class="slds-text-align_right">{!a.Unit}</div>
+  </div>
+    <div style="margin-top:0px;margin-bottom:0px">
+  <div class="slds-text-align_left">Sentiment- {!a.Sentiment__c}</div>
+    </div>
+    <div style="margin-bottom:15px">
+  <div class="slds-text-align_left">{!a.Description__c}</div>
+    </div>
+        <br></br>	
+</div>
+
+	    </aura:iteration>
+</aura:component>

@@ -1,0 +1,9 @@
+.THIS.c-container {
+    padding: 5px 5px 5px 5px;
+    background-color: white;
+    border-radius: 4px;
+    font-weight: bolder;
+}
+.THIS .slds-theme_warning{
+    color: #8f0404;
+}

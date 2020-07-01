@@ -1,0 +1,49 @@
+.THIS.c-container {
+    border: 1px solid #d8dde6;
+    height: 180px;
+    background-color:white;
+}
+.THIS .page-section {
+    padding-top: 28px;
+}
+.THIS .page-header,
+.THIS .page-footer {
+    height: 50px;
+}
+.THIS .page-main {
+}
+.THIS .page-left,
+.THIS .page-right {
+}
+.THIS .image-class{
+    background-image:url('/resource/1592790036000/BackgroundAvatar');
+        height: 87px;
+}
+.THIS .slds-avatar--large{
+    width: 100px;
+    height: 100px;    
+}
+.THIS .pclass{
+    padding-top: 56px;
+    padding-left: 115px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    height: 26px;
+}
+.THIS .contentclass{
+    padding-bottom:30px;
+}
+.THIS .cpadding{
+    padding-left: 106px;
+    padding-top: 54px;
+}
+.THIS .slds-size_9-of-12{
+    width:100%
+}
+.THIS .pcontent{
+    font-family: inherit;
+    font-weight: 600;
+    padding-right: 4px;
+    padding-left: 10px;
+}
