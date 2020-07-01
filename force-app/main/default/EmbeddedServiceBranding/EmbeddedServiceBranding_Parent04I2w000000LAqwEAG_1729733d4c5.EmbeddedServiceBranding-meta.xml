@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmbeddedServiceBranding xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contrastInvertedColor>#ffffff</contrastInvertedColor>
+    <contrastPrimaryColor>#D51E10</contrastPrimaryColor>
+    <embeddedServiceConfig>Chatbot_Queue</embeddedServiceConfig>
+    <font>Arial</font>
+    <height>0</height>
+    <masterLabel>EmbeddedServiceBranding_Parent04I2w000000LAqwEAG_1729c02c7c1</masterLabel>
+    <navBarColor>#D51E10</navBarColor>
+    <primaryColor>#D51E10</primaryColor>
+    <secondaryColor>#D51E10</secondaryColor>
+    <width>0</width>
+</EmbeddedServiceBranding>

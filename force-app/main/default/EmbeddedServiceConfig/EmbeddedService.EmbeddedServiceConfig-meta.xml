@@ -3,5 +3,5 @@
     <areGuestUsersAllowed>false</areGuestUsersAllowed>
     <masterLabel>EmbeddedService</masterLabel>
     <shouldHideAuthDialog>false</shouldHideAuthDialog>
-    <site>help_center</site>
+    <site>Contact_Us</site>
 </EmbeddedServiceConfig>
